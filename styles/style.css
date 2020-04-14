@@ -1,0 +1,643 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+#cards {
+  position: absolute;
+  bottom: 220px;
+}
+
+#cards > div:hover {
+  z-index: 2;
+  cursor: pointer;
+}
+
+.heart-1 {
+  background-image: url("./playingCards/heart-1.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.heart-2 {
+  background-image: url("./playingCards/heart-2.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.heart-3 {
+  background-image: url("./playingCards/heart-3.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.heart-4 {
+  background-image: url("./playingCards/heart-4.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.heart-5 {
+  background-image: url("./playingCards/heart-5.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.heart-6 {
+  background-image: url("./playingCards/heart-6.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.heart-7 {
+  background-image: url("./playingCards/heart-7.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.heart-8 {
+  background-image: url("./playingCards/heart-8.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.heart-9 {
+  background-image: url("./playingCards/heart-9.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.heart-10 {
+  background-image: url("./playingCards/heart-10.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.heart-11 {
+  background-image: url("./playingCards/heart-11.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.heart-12 {
+  background-image: url("./playingCards/heart-12.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.heart-13 {
+  background-image: url("./playingCards/heart-13.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-1 {
+  background-image: url("./playingCards/club-1.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-2 {
+  background-image: url("./playingCards/club-2.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-3 {
+  background-image: url("./playingCards/club-3.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-4 {
+  background-image: url("./playingCards/club-4.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-5 {
+  background-image: url("./playingCards/club-5.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-6 {
+  background-image: url("./playingCards/club-6.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-7 {
+  background-image: url("./playingCards/club-7.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-8 {
+  background-image: url("./playingCards/club-8.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-9 {
+  background-image: url("./playingCards/club-9.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-10 {
+  background-image: url("./playingCards/club-10.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-11 {
+  background-image: url("./playingCards/club-11.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-12 {
+  background-image: url("./playingCards/club-12.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.club-13 {
+  background-image: url("./playingCards/club-13.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-1 {
+  background-image: url("./playingCards/spade-1.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-2 {
+  background-image: url("./playingCards/spade-2.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-3 {
+  background-image: url("./playingCards/spade-3.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-4 {
+  background-image: url("./playingCards/spade-4.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-5 {
+  background-image: url("./playingCards/spade-5.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-6 {
+  background-image: url("./playingCards/spade-6.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-7 {
+  background-image: url("./playingCards/spade-7.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-8 {
+  background-image: url("./playingCards/spade-8.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-9 {
+  background-image: url("./playingCards/spade-9.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-10 {
+  background-image: url("./playingCards/spade-10.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-11 {
+  background-image: url("./playingCards/spade-11.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-12 {
+  background-image: url("./playingCards/spade-12.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.spade-13 {
+  background-image: url("./playingCards/spade-13.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-1 {
+  background-image: url("./playingCards/diamond-1.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-2 {
+  background-image: url("./playingCards/diamond-2.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-3 {
+  background-image: url("./playingCards/diamond-3.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-4 {
+  background-image: url("./playingCards/diamond-4.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-5 {
+  background-image: url("./playingCards/diamond-5.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-6 {
+  background-image: url("./playingCards/diamond-6.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-7 {
+  background-image: url("./playingCards/diamond-7.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-8 {
+  background-image: url("./playingCards/diamond-8.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-9 {
+  background-image: url("./playingCards/diamond-9.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-10 {
+  background-image: url("./playingCards/diamond-10.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-11 {
+  background-image: url("./playingCards/diamond-11.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-12 {
+  background-image: url("./playingCards/diamond-12.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.diamond-13 {
+  background-image: url("./playingCards/diamond-13.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 216.225px;
+  width: 125px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+}
+
+.hide {
+  background-image: url(/styles/playingCards/card-back.png);
+}
+/*# sourceMappingURL=style.css.map */

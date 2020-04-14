@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+#cards {
+  position: absolute;
+  bottom: 220px;
+}
+
+#cards > div:hover {
+  z-index: 2;
+  cursor: pointer;
+}
+
+$cardTypes: heart, club, spade, diamond;
+@each $card in $cardTypes {
+  @for $i from 1 through 13 {
+    .#{$card}-#{$i} {
+      background-image: url("./playingCards/#{$card}-#{$i}.png");
+      background-size: 100%, 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      height: 216.225px;
+      width: 125px;
+      border: 1px solid rgb(34, 34, 34);
+      border-radius: 5px;
+    }
+  }
+}
+
+.hide {
+  background-image: url(/styles/playingCards/card-back.png);
+}
