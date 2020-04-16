@@ -1,5 +1,7 @@
 var cardsContainer = document.getElementById("cards");
+var controls = document.getElementById("controls");
 var startBtn = document.getElementById("start");
+var startBtnDiv = document.getElementById("startbtn");
 var shuffleBtn = document.getElementById("shuffle");
 var hideBtn = document.getElementById("hide");
 var magicBtn = document.getElementById("magic");
@@ -15,6 +17,8 @@ cardTypes.forEach(function (card) {
 });
 startBtn.addEventListener("click", function () {
     //create div for each card and place them next to each other
+    startBtnDiv.style.display = "none";
+    controls.style.display = "flex";
     cards.forEach(function (card, index) {
         var newCard = document.createElement("div");
         newCard.setAttribute("class", "" + card);

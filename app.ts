@@ -1,5 +1,7 @@
 const cardsContainer = document.getElementById("cards");
+const controls = document.getElementById("controls");
 const startBtn = document.getElementById("start");
+const startBtnDiv = document.getElementById("startbtn");
 const shuffleBtn = document.getElementById("shuffle");
 const hideBtn = document.getElementById("hide");
 const magicBtn = document.getElementById("magic");
@@ -18,6 +20,8 @@ cardTypes.forEach((card) => {
 
 startBtn.addEventListener("click", () => {
   //create div for each card and place them next to each other
+  startBtnDiv.style.display = "none";
+  controls.style.display = "flex";
   cards.forEach((card, index) => {
     let newCard = document.createElement("div");
     newCard.setAttribute("class", `${card}`);

@@ -3,6 +3,48 @@
   padding: 0px;
 }
 
+body {
+  background-color: rgb(120, 35, 153);
+  color: rgb(243, 243, 243);
+  font-family: poppins, serif;
+}
+
+button {
+  border-radius: 4px;
+  height: 35px;
+  width: 65px;
+  border: none;
+  border-bottom: 3px solid rgb(196, 69, 247);
+  font-size: 1em;
+  cursor: pointer;
+  margin: 20px;
+  &:hover {
+    color: rgb(196, 69, 247);
+  }
+}
+
+.heading,
+.instructions {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+#startbtn,
+#controls {
+  justify-content: center;
+  justify-self: center;
+  border: none;
+}
+
+#startbtn {
+  display: flex;
+}
+
+#controls {
+  display: none;
+}
+
 #cards {
   position: absolute;
   bottom: 220px;
