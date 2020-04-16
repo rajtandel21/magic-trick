@@ -26,6 +26,7 @@ $cardTypes: heart, club, spade, diamond;
       width: 125px;
       border: 1px solid rgb(34, 34, 34);
       border-radius: 5px;
+      transition: left 1s ease-in;
     }
   }
 }

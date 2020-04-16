@@ -15,15 +15,23 @@ cardTypes.forEach(function (card) {
 });
 startBtn.addEventListener("click", function () {
     //create div for each card and place them next to each other
-    var cardDistance = 0;
-    cards.forEach(function (card) {
+    cards.forEach(function (card, index) {
         var newCard = document.createElement("div");
         newCard.setAttribute("class", "" + card);
-        newCard.style.left = cardDistance * 24.25 + "px";
+        newCard.style.left = index * 24.25 + "px";
         cardsContainer.appendChild(newCard);
-        cardDistance++;
     });
 });
+function shuffleAnimation() {
+    var allcards = cardsContainer.querySelectorAll("div");
+    allcards.forEach(function (div, index) {
+        div.style.left = "0px";
+        setTimeout(function () {
+            div.style.left = index * 24.25 + "px";
+            div.setAttribute("class", "" + cards[index]);
+        }, 1000);
+    });
+}
 shuffleBtn.addEventListener("click", function () {
     var _a;
     //randomise all the cards
@@ -32,10 +40,7 @@ shuffleBtn.addEventListener("click", function () {
         var temp = cards[i];
         _a = [cards[j], temp], cards[i] = _a[0], cards[j] = _a[1];
     }
-    var allcards = cardsContainer.querySelectorAll("div");
-    allcards.forEach(function (div, index) {
-        div.setAttribute("class", "" + cards[index]);
-    });
+    shuffleAnimation();
 });
 hideBtn.addEventListener("click", function () {
     //add class to all div to change background img
@@ -43,4 +48,18 @@ hideBtn.addEventListener("click", function () {
     allcards.forEach(function (div) {
         div.classList.toggle("hide");
     });
+});
+magicBtn.addEventListener("click", function () {
+    //rearrange the cards by number then type
+    cards.sort(function (a, b) {
+        var aNum = a.split("-")[1];
+        var bNum = b.split("-")[1];
+        return aNum - bNum;
+    });
+    cards.sort(function (a, b) {
+        var aType = a.split("-")[0];
+        var bType = b.split("-")[0];
+        return cardTypes.indexOf(aType) - cardTypes.indexOf(bType);
+    });
+    shuffleAnimation();
 });

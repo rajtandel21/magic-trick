@@ -18,15 +18,24 @@ cardTypes.forEach((card) => {
 
 startBtn.addEventListener("click", () => {
   //create div for each card and place them next to each other
-  let cardDistance: number = 0;
-  cards.forEach((card) => {
+  cards.forEach((card, index) => {
     let newCard = document.createElement("div");
     newCard.setAttribute("class", `${card}`);
-    newCard.style.left = `${cardDistance * 24.25}px`;
+    newCard.style.left = `${index * 24.25}px`;
     cardsContainer.appendChild(newCard);
-    cardDistance++;
   });
 });
+
+function shuffleAnimation() {
+  const allcards = cardsContainer.querySelectorAll("div");
+  allcards.forEach((div, index) => {
+    div.style.left = "0px";
+    setTimeout(() => {
+      div.style.left = `${index * 24.25}px`;
+      div.setAttribute("class", `${cards[index]}`);
+    }, 1000);
+  });
+}
 
 shuffleBtn.addEventListener("click", () => {
   //randomise all the cards
@@ -35,10 +44,7 @@ shuffleBtn.addEventListener("click", () => {
     let temp = cards[i];
     [cards[i], cards[j]] = [cards[j], temp];
   }
-  const allcards = cardsContainer.querySelectorAll("div");
-  allcards.forEach((div, index) => {
-    div.setAttribute("class", `${cards[index]}`);
-  });
+  shuffleAnimation();
 });
 
 hideBtn.addEventListener("click", () => {
@@ -47,4 +53,19 @@ hideBtn.addEventListener("click", () => {
   allcards.forEach((div) => {
     div.classList.toggle("hide");
   });
+});
+
+magicBtn.addEventListener("click", () => {
+  //rearrange the cards by number then type
+  cards.sort((a, b) => {
+    let aNum: number = a.split("-")[1];
+    let bNum: number = b.split("-")[1];
+    return aNum - bNum;
+  });
+  cards.sort((a, b) => {
+    let aType: string = a.split("-")[0];
+    let bType: string = b.split("-")[0];
+    return cardTypes.indexOf(aType) - cardTypes.indexOf(bType);
+  });
+  shuffleAnimation();
 });
