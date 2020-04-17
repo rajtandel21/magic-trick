@@ -59,6 +59,7 @@ button:hover {
 #cards > div:hover {
   z-index: 2;
   cursor: pointer;
+  bottom: -200px;
 }
 
 .heart-1 {

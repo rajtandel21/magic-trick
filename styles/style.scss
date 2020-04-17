@@ -53,6 +53,7 @@ button {
 #cards > div:hover {
   z-index: 2;
   cursor: pointer;
+  bottom: -200px;
 }
 
 $cardTypes: heart, club, spade, diamond;
